@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
+html {
+  font-size: 10px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+header {
+  background-color: black;
+  background-image: linear-gradient(
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0.258),
+    rgb(17, 17, 17)
+  );
+}
+.header h2 {
+  color: #e6533c;
+  font-size: 3.6rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 19rem;
+  margin-right: 19rem;
+
+  padding: 5rem 0;
+}
+.header ul {
+  display: flex;
+
+  padding: 2rem;
+}
+.header li {
+  list-style: none;
+}
+.header ul a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.2rem 2rem;
+  color: white;
+}
+.header .icon {
+  width: 2rem;
+  display: none;
+}
+.header .icon img {
+  width: 100%;
+}
+.header .home a {
+  background-color: #e6533c;
+  border-radius: 4.6rem;
+  border: none;
+}
+.miama-font {
+  font-family: "Miama", sans-serif;
+  font-size: 16rem;
+  font-weight: 400;
+}
+.bannerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-left: 19rem;
+  margin-right: 19rem;
+}
+.bannerContainer .bannerArticle {
+  max-width: 52rem;
+}
+.bannerContainer .bannerImage {
+  background-image: url("./images/Images 2.png");
+
+  background-size: cover;
+  background-position: center;
+  width: 34.9rem;
+  height: 58rem;
+  
+}
+.bannerContainer .bannerArticle h2 {
+  font-size: 7.8rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 2.8rem;
+}
+.bannerContainer .bannerArticle p {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 2.8rem;
+}
+.bannerContainer .button {
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  color: white;
+}
+.bannerContainer .button1 {
+  background-color: #e6533c;
+  border-radius: 4.2rem;
+  margin-right: 1.4rem;
+  padding: 1.6rem 4rem;
+}
+.bannerContainer .button2 {
+  background-color: rgba(240, 248, 255, 0);
+  border-radius: 4.2rem;
+  border: 1px solid white;
+  padding: 1.6rem 4rem;
+}
+.bannerContainer .popup1 {
+  width: 20.6rem;
+  height: 9.6rem;
+  background-color: rgba(48, 48, 48, 0.54);
+  border-radius: 1.2rem;
+  backdrop-filter: blur(2rem);
+  border: 1px solid rgba(0, 0, 0, 0.105);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 42.1rem;
+  left: -11.3rem;
+}
+.popup1 h3 {
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.popup1 p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.popup1 .sec1 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #e6533c;
+}
+.popup2 {
+  width: 20.6rem;
+  max-height: 9.6rem;
+  background-color: rgba(48, 48, 48, 0.54);
+  border-radius: 1.2rem;
+  backdrop-filter: blur(2rem);
+  border: 1px solid rgba(0, 0, 0, 0.105);
+  padding: 1rem;
+  position: relative;
+  top: 4rem;
+  right: -23rem;
+}
+.popup2 h3 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+.popup2 p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
