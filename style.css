@@ -7,6 +7,10 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: none;
+}
+.navcontainer{
+  border: none;
 }
 
 body {
@@ -15,14 +19,16 @@ body {
   font-style: normal;
   max-width: 1440px;
   margin: 0 auto;
+  background-color: black;
 }
 header {
   background-color: black;
   background-image: linear-gradient(
-    rgb(17, 17, 17),
-    rgba(119, 119, 119, 0.258),
-    rgb(17, 17, 17)
+    rgb(0, 0, 0),
+    rgba(119, 119, 119, 0.395),
+    rgb(0, 0, 0)
   );
+  border: none;
 }
 .header h2 {
   color: #e6533c;
@@ -36,15 +42,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 19rem;
-  margin-right: 19rem;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
 
   padding: 5rem 0;
 }
 .header ul {
   display: flex;
-
-  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.324);
+  border-radius: 3rem;
+  padding: 1.8rem .6rem;
 }
 .header li {
   list-style: none;
@@ -60,6 +68,9 @@ header {
   width: 2rem;
   display: none;
 }
+.header .icon a{
+  width: 2rem;
+}
 .header .icon img {
   width: 100%;
 }
@@ -73,6 +84,7 @@ header {
   font-size: 16rem;
   font-weight: 400;
 }
+
 .bannerContainer {
   display: flex;
   flex-wrap: wrap;
@@ -81,6 +93,7 @@ header {
   color: white;
   margin-left: 19rem;
   margin-right: 19rem;
+  border: none;
 }
 .bannerContainer .bannerArticle {
   max-width: 52rem;
@@ -92,7 +105,6 @@ header {
   background-position: center;
   width: 34.9rem;
   height: 58rem;
-  
 }
 .bannerContainer .bannerArticle h2 {
   font-size: 7.8rem;
@@ -106,23 +118,28 @@ header {
   font-size: 1.6rem;
   margin-bottom: 2.8rem;
 }
-.bannerContainer .button {
-  font-size: 1.8rem;
-  font-weight: 600;
 
-  color: white;
-}
-.bannerContainer .button1 {
+ .btn {
   background-color: #e6533c;
   border-radius: 4.2rem;
   margin-right: 1.4rem;
   padding: 1.6rem 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: inline;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 .bannerContainer .button2 {
   background-color: rgba(240, 248, 255, 0);
   border-radius: 4.2rem;
   border: 1px solid white;
   padding: 1.6rem 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: inline;
+  color: white;
 }
 .bannerContainer .popup1 {
   width: 20.6rem;
@@ -171,4 +188,224 @@ header {
 .popup2 p {
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+@media screen and (min-width: 844px) and (max-width: 1378px) {
+  .bannerContainer {
+    flex-direction: column;
+  }
+}
+@media screen  and (max-width: 431px) {
+  .bannerContainer .bannerArticle h2 {
+    font-size: 3.6rem;
+    
+  }
+  .bannerContainer span {
+    font-size: 7rem;
+  }
+  .header ul {
+    display: none;
+  }
+  .header .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .nav img{
+    width: 100%;
+  }
+  .header .nav a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+.nav .h2{
+  flex-grow: 3;
+}
+  .header .icon {
+    display: inline;
+    max-width: 2rem;
+    flex-grow: 1;
+  }
+  .bannerContainer {
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
+    justify-content: center;
+  }
+  .bannerContainer .bannerArticle {
+    margin-bottom: 4.5rem;
+  }
+  .bannerContainer .button {
+    height: 5.4rem;
+    width: 16.9rem;
+    padding: 1rem;
+  }
+
+  .buttonContainer {
+    display: flex;
+  }
+  .bannerContainer .popup1 {
+    top: 22rem;
+    left: 1rem;
+    max-width: 14.5rem;
+    max-height: 7.4rem;
+    padding: 0.5rem;
+  }
+  .bannerContainer .popup2 {
+    top: -5rem;
+    right: -18rem;
+    max-width: 14.5rem;
+    max-height: 7.4rem;
+  }
+  .bannerContainer .popup2 h3 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .bannerContainer .popup2 p {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .bannerContainer .popup1 h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+  .bannerContainer .popup1 p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .bannerContainer .sec1 {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+/* section1 start */
+.section1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  border: none;
+  color: white;
+  background-color: black;
+  margin-top: 10rem;
+}
+.section1 .h2{
+  font-size: 4.8rem;
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+  max-width: 48rem;
+  
+}
+.section1 > .paragraph{
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  max-width: 67rem;
+  text-align: center;
+  margin-bottom: 5.8rem;
+}
+.section1 .container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 4rem;
+}
+.section1 .item{
+  width: 23rem;
+  text-align: center;
+}
+
+.section1 .photo img{
+  width: 18rem;
+  border-radius: 50%;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.section1 .h4{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: .6rem;
+}
+.section1 .item .paragraph{
+  font-size: 1.4rem;
+  font-family: 400;
+}
+.section1 .container2{
+  display: flex;
+  
+  justify-content: space-between;
+  gap: 16.5rem;
+  height: 37rem;
+  background-color: rgb(34, 34, 34);
+  border-radius: 1.8rem;
+  padding: 3rem;
+  margin-top: 10rem;
+  
+}
+.section1 .container2 .article{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 44.3rem;
+}
+.section1 .container2 .h2{
+  font-size: 4.8rem;
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+}
+.section1 .container2 .paragraph{
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  margin-bottom: 3.4rem;
+}
+.section1 .container2 .photo{
+width: 36.6rem;
+height: 31.2rem;
+background-image: url('./images/run.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 1.8rem;
+}
+/* mobile design for section1 */
+@media screen  and (max-width: 431px){
+  .section1{
+    margin-top: 2rem;
+  }
+  .section1 .h2{
+    font-size: 3.2rem;
+    
+  }
+  .section1 .container{
+    grid-template-columns: 1fr;
+    grid-row-gap:4rem;
+  }
+  .section1 .container2{
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+    max-width: 38rem;
+    padding: 2rem;
+  }
+  .section1 .container2 .article{
+    align-items: center;
+    width: 100%;
+  }
+  .section1 .container2 .h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.4rem;
+  }
+  .section1 .container2 .paragraph{
+    margin-bottom: 2.4rem;
+  }
+  .section1 .container2 .button{
+    width: 100%;
+    margin-right: auto;
+  }
+  .section1 .container2 .photo{
+    width: 100%;
+    height: 17rem;
+  }
+  
 }
