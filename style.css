@@ -583,7 +583,7 @@ grid-template-columns: repeat(3, 1fr);
 gap: 2rem;
 padding: 2rem;
 border-radius: .8rem;
-margin-bottom: 8.8rem;
+
 }
 .section3 .photoContainer .photo{
 background-size: cover;
@@ -729,3 +729,76 @@ letter-spacing: 0.3px;
   margin-bottom: 7rem;
 }
 }
+
+/* section 4 started */
+.section4{
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.section4 > .h2{
+  font-size: 4.8rem;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+}
+.section4 .image{
+  width: 10rem;
+  height: 10rem;
+  background-color: white;  
+}
+
+.section4  .image img{
+ width: 100%;
+ 
+}
+.section4 .part1{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-left: 19rem;
+  margin-right: 19rem;
+  gap: 2rem;
+}
+
+.section4 .h3{
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.section4 .para{
+  color: rgba(255, 255, 255, 0.537);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.section4 .button{
+  display: block;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+}
+/* mobile view for section4 */
+
+@media screen and (max-width: 431px){
+.section4 > .h2{
+  font-size: 3.2rem;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+}
+.section4 .part1{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  gap: 2rem;
+}
+.section4 .button{
+  display: block;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+}
+} 
