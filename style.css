@@ -409,3 +409,144 @@ border-radius: 1.8rem;
   }
   
 }
+
+/* section2 started */
+.section2{
+  color: white;
+}
+.section2 .headingContainer .h2{
+  font-size: 4.8rem;
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+}
+.section2 .headingContainer .paragraph{
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 8.8rem;
+  line-height: 2.4rem;
+}
+.section2 > .headingContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 10rem auto 2rem;
+ 
+  max-width: 67rem;
+}
+.section2 .container{
+  display: flex;
+  justify-content:space-around;
+  background-color: rgb(34, 34, 34);
+  padding: 4.9rem;
+
+}
+.section2 .container1 .h3{
+  font-size: 2.8rem;
+  margin-bottom: 5.2rem;
+}
+.section2 .table{
+  width: 31rem;
+  height: 21.6rem;
+  
+}
+.section2 table, td, th{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+.section2 td, th{
+  text-align: start;
+  padding: 1rem;
+}
+.section2 th{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.section2 td{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+.section2 .container2{
+  max-width: 57.7rem;
+}
+.section2 .container2 .h2{
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+}
+.section2 .container2 .paragraph{
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 3.3rem;
+}
+.section2 .form .dataContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 1.2rem;
+
+}
+.section2 .form #activity{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: rgba(255, 255, 255, 0.224);
+  margin-bottom: 3.4rem;
+}
+.section2 .form .dataContainer .input, .ipt{
+  font-size: 1.6rem;
+  font-weight: 400;
+padding: 1.2rem 2rem;
+background-color: rgba(255, 255, 255, 0.1);
+color: rgba(255, 255, 255, 0.1);
+border-radius: .8rem;
+border: none;
+}
+.section2 .form #gender {
+  color: rgba(255, 255, 255, 0.283);
+
+}
+
+/* mobile view for section2 */
+
+
+@media screen  and (max-width: 431px) {
+  .section2 .headingContainer .h2{
+  font-size: 3.2rem;
+  margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .section2 .headingContainer .paragraph{
+    margin-bottom: 3.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .section2 .container{
+  display: flex;
+  flex-direction: column;
+  align-items:space-between;
+  
+  padding: 3.4rem 2rem;
+  row-gap: 4.2rem;
+}
+  .section2 .container1 .h3{
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+.section2 .container2{
+  max-width: 36rem;
+}
+.section2 .container2 .h2{
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+.section2 .form .dataContainer{
+  max-width: 36rem;
+  
+}
+
+.section2 .form .dataContainer .ipt{
+  max-width: 15rem;
+}
+.section2 .form #activity{
+  max-width: 33.5rem;
+}
+}
